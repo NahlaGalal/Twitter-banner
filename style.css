@@ -149,3 +149,39 @@
 .frame-3 {
   box-shadow: 0 0 0 4px #2a4d2a, 0 0 0 10px #102a2f;
 }
+
+/* ----------------------------- */
+/* Lamp */
+.lamp {
+  position: absolute;
+  left: 50%;
+  top: 35px;
+  transform: translateX(-50%);
+  width: 100px;
+  height: 50px;
+  border-radius: 100px 100px 0 0;
+  background-color: #fff;
+}
+
+.lamp::after,
+.lamp::before {
+  position: absolute;
+  content: "";
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.lamp::before {
+  width: 4px;
+  height: 35px;
+  background-color: #0b1d1d;
+  top: -35px;
+}
+
+.lamp::after {
+  width: 40px;
+  height: 20px;
+  border-radius: 0 0 40px 40px;
+  background: #fbee13;
+  bottom: -20px;
+}

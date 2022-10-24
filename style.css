@@ -185,3 +185,60 @@
   background: #fbee13;
   bottom: -20px;
 }
+
+/* -------------------------------- */
+/* Calendar */
+.calendar {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  background: #fff;
+  left: 900px;
+  top: 40px;
+  border-radius: 5px;
+}
+
+/* Calendar circles */
+.calendar-header {
+  display: flex;
+  justify-content: space-around;
+}
+
+.calendar-header-circle {
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background-color: #000206;
+}
+
+/* Calendar heading */
+.calendar-heading {
+  width: 80px;
+  height: 15px;
+  margin: 5px auto;
+  background-color: #aad7d1;
+  border-radius: 2px;
+}
+
+.calendar-days {
+  display: grid;
+  grid-template-columns: repeat(7, 10px);
+  grid-template-rows: repeat(5, 10px);
+  gap: 3px;
+  padding: 0 6px;
+}
+
+.day {
+  width: 10px;
+  height: 10px;
+  background-color: #6dd1cf;
+}
+
+.day:first-of-type {
+  grid-column: 5/6;
+}
+
+.day:nth-of-type(7n + 2),
+.day:nth-of-type(7n + 3) {
+  background-color: #c24332;
+}

@@ -11,7 +11,7 @@
   width: 240px;
   height: 100px;
   top: 40px;
-  left: 6%;
+  left: 90px;
   border-bottom: 10px solid #112a2c;
   display: flex;
   justify-content: space-between;
@@ -117,4 +117,35 @@
   transform: rotate(90deg);
   top: 15px;
   left: 14px;
+}
+
+/* -------------------------------------- */
+/* Frames */
+.frames {
+  position: absolute;
+  display: flex;
+  left: 380px;
+  top: 20px;
+  gap: 24px;
+}
+
+.frame {
+  width: 50px;
+  height: 50px;
+  background: linear-gradient(45deg, #a1d6d4 50%, #72cace 50%);
+}
+
+.frame-1 {
+  box-shadow: 0 0 0 4px #306260, 0 0 0 8px #50998b, 0 0 0 10px #b7ce8d;
+  margin-top: 40px;
+}
+
+.frame-2 {
+  background: linear-gradient(45deg, #f1ebde 50%, #72cace 50%);
+  box-shadow: 0 0 0 4px #2a4d2a, 0 0 0 10px #c44430;
+  margin-top: 20px;
+}
+
+.frame-3 {
+  box-shadow: 0 0 0 4px #2a4d2a, 0 0 0 10px #102a2f;
 }

@@ -3,6 +3,7 @@
   width: 1500px;
   height: 500px;
   background: #94d1ca;
+  overflow: hidden;
 }
 
 /* Left rack */
@@ -361,4 +362,12 @@
 .music-box::before,
 .music-box .circle::before {
   right: 15px;
+}
+
+/* ------------------------------- */
+/* On table */
+.on-table {
+  display: flex;
+  margin: 250px auto 0;
+  width: 1050px;
 }

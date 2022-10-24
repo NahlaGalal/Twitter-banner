@@ -382,8 +382,7 @@
   height: 70px;
   background-color: #102a2f;
   border-radius: 5px;
-  margin-bottom: 5px;
-  margin-left: 30px;
+  margin: 0 30px 5px;
 }
 
 .on-table .mobile::after {
@@ -403,4 +402,84 @@
   margin: 4px auto 0;
   height: 55px;
   background: linear-gradient(58deg, #9fd7d6 50%, #72c9d0 50%);
+}
+
+/* On table => First screen */
+.screen-1 {
+  position: relative;
+  width: 300px;
+  height: 200px;
+  background-color: #f4ebd8;
+  margin-left: 30px;
+  margin-bottom: 35px;
+  border-radius: 10px;
+}
+
+.screen-1::before,
+.screen-1::after {
+  position: absolute;
+  content: "";
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.screen-1::before {
+  width: 70px;
+  height: 35px;
+  background-color: #f4ebd8;
+  bottom: -35px;
+  border-bottom: 5px solid #63c0c4;
+}
+
+.screen-1::after {
+  width: 10px;
+  height: 10px;
+  border-radius: 2px;
+  background-color: #af402a;
+  bottom: 22px;
+}
+
+.monitor {
+  width: 260px;
+  height: 135px;
+  border: 5px solid #13242a;
+  background-color: #606f6e;
+  border-radius: 10px 10px 0 0;
+  padding: 10px 15px 0;
+}
+
+.code {
+  height: 125px;
+  background-color: #509e9f;
+  padding-top: 10px;
+}
+
+.line-full {
+  height: 7px;
+  background-color: #f1feff;
+  margin-bottom: 5px;
+}
+
+.line {
+  height: 12px;
+  width: 110px;
+  margin-bottom: 5px;
+  background-color: #f1feff;
+  margin-left: auto;
+  margin-right: 20px;
+}
+
+.footer {
+  display: flex;
+  justify-content: center;
+  background-color: #73cbcb;
+  height: 16px;
+  gap: 10px;
+  padding: 5px 30px;
+}
+
+.footer-card {
+  height: 16px;
+  background-color: #509ea1;
+  flex: 1;
 }

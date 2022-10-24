@@ -368,7 +368,7 @@
 /* On table */
 .on-table {
   display: flex;
-  margin: 250px auto 0;
+  margin: 130px auto 0;
   width: 1050px;
   align-items: flex-end;
   border-bottom: 1px solid red;
@@ -482,4 +482,37 @@
   height: 16px;
   background-color: #509ea1;
   flex: 1;
+}
+
+/* On table => Second screen */
+.screen-2 {
+  position: relative;
+  width: 300px;
+  height: 160px;
+  background: linear-gradient(-28deg, #627072 50%, #203536 50%);
+  margin-left: 15px;
+  margin-bottom: 35px;
+  border: 10px solid #10272b;
+}
+
+.screen-2::before {
+  position: absolute;
+  content: "";
+  left: 50%;
+  transform: translateX(-50%);
+  width: 70px;
+  height: 25px;
+  background-color: #f4ebd8;
+  bottom: -35px;
+}
+
+.screen-2::after {
+  position: absolute;
+  content: "";
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100px;
+  height: 10px;
+  background-color: #5fbcc8;
+  bottom: -45px;
 }

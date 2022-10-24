@@ -495,11 +495,15 @@
   border: 10px solid #10272b;
 }
 
+.screen-2::after,
 .screen-2::before {
   position: absolute;
   content: "";
   left: 50%;
   transform: translateX(-50%);
+}
+
+.screen-2::before {
   width: 70px;
   height: 25px;
   background-color: #f4ebd8;
@@ -507,12 +511,39 @@
 }
 
 .screen-2::after {
-  position: absolute;
-  content: "";
-  left: 50%;
-  transform: translateX(-50%);
   width: 100px;
   height: 10px;
   background-color: #5fbcc8;
   bottom: -45px;
+}
+
+/* On table => cup */
+.cup {
+  margin-left: 30px;
+}
+
+.cup .head {
+  position: relative;
+  width: 68px;
+  height: 15px;
+  background-color: #64c1c3;
+  transform-style: preserve-3d;
+}
+
+.cup .head::after {
+  position: absolute;
+  content: "";
+  width: 10px;
+  height: 40px;
+  background-color: #fefbfc;
+  transform: rotate(45deg) translateZ(-1px);
+  top: -30px;
+  right: 10px;
+}
+
+.body {
+  width: 68px;
+  height: 70px;
+  background-color: #4f9b9d;
+  clip-path: polygon(5px 0, 63px 0, 53px 100%, 15px 100%);
 }

@@ -1,5 +1,120 @@
 .container {
+  position: relative;
   width: 1500px;
   height: 500px;
-  background: #000;
+  background: #94d1ca;
+}
+
+/* Left rack */
+.rack-left {
+  position: absolute;
+  width: 240px;
+  height: 100px;
+  top: 40px;
+  left: 6%;
+  border-bottom: 10px solid #112a2c;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+/* Left rack => books */
+.rack-left .books {
+  display: flex;
+  align-items: flex-end;
+}
+
+.rack-left .books .book-1 {
+  position: relative;
+  width: 20px;
+  height: 100px;
+  background-color: #e65e33;
+  margin-left: 20px;
+}
+
+.rack-left .books .book-1::after,
+.rack-left .books .book-1::before {
+  position: absolute;
+  content: "";
+  width: 20px;
+  height: 20px;
+  background-color: #f2feff;
+  top: 15px;
+  left: 0;
+}
+
+.rack-left .books .book-1::before {
+  top: 65px;
+}
+
+.rack-left .books .book-2 {
+  width: 20px;
+  height: 75px;
+  background-color: #fbef17;
+  border: 1px solid #112a2c;
+}
+
+.rack-left .books .book-3 {
+  position: relative;
+  width: 22px;
+  height: 100px;
+  background-color: #4e9ba1;
+  transform: rotate(-25deg);
+  margin-left: 13px;
+}
+
+.rack-left .books .book-3::after,
+.rack-left .books .book-3::before {
+  position: absolute;
+  content: "";
+  width: 12px;
+  height: 50px;
+  background: #8fcdca;
+  top: 35px;
+  left: 5px;
+}
+
+.rack-left .books .book-3::before {
+  top: 5px;
+  left: 2px;
+  width: 18px;
+  height: 20px;
+  background: linear-gradient(90deg, #8fcdca 8px, #4e9ba1 9px, #4e9ba1 9px, #8fcdca 9px);
+}
+
+/* Left rack => clock */
+.rack-left .clock {
+  width: 60px;
+  height: 80px;
+  background-color: #1e363a;
+  border-radius: 5px;
+  border: 3px solid #f2feff;
+  border-bottom: 0;
+  margin-right: 20px;
+}
+
+.rack-left .clock .hour {
+  position: relative;
+  width: 50px;
+  height: 50px;
+  margin: 10px 5px 0;
+  background: #fff;
+  border-radius: 50%;
+}
+
+.rack-left .clock .hour::after,
+.rack-left .clock .hour::before {
+  position: absolute;
+  content: "";
+  width: 4px;
+  height: 23px;
+  background-color: #010101;
+  left: 23px;
+  top: 4px;
+}
+
+.rack-left .clock .hour::before {
+  transform: rotate(90deg);
+  top: 15px;
+  left: 14px;
 }

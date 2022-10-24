@@ -10,7 +10,7 @@
   position: absolute;
   width: 240px;
   height: 100px;
-  top: 40px;
+  top: 60px;
   left: 90px;
   border-bottom: 10px solid #112a2c;
   display: flex;
@@ -220,6 +220,7 @@
   border-radius: 2px;
 }
 
+/* Days */
 .calendar-days {
   display: grid;
   grid-template-columns: repeat(7, 10px);
@@ -241,4 +242,123 @@
 .day:nth-of-type(7n + 2),
 .day:nth-of-type(7n + 3) {
   background-color: #c24332;
+}
+
+/* --------------------------- */
+/* Right rack */
+.rack-right {
+  position: absolute;
+  width: 240px;
+  height: 100px;
+  top: 60px;
+  right: 10px;
+  border-bottom: 10px solid #112a2c;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+/* Right rack => Plant */
+.plant {
+  position: relative;
+  margin-left: 10px;
+}
+
+.plant .flower {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background-color: #be412d;
+  border: 5px solid #ed910a;
+}
+
+.plant .branch {
+  position: absolute;
+  width: 5px;
+  height: 60px;
+  background-color: #467d0b;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 35px;
+}
+
+.plant .branch::after,
+.plant .branch::before {
+  position: absolute;
+  content: "";
+  width: 5px;
+  height: 30px;
+  background-color: #467d0b;
+  transform: rotate(45deg);
+  left: 12px;
+}
+
+.plant .branch::after {
+  transform: rotate(-45deg);
+  left: -12px;
+  top: -14px;
+}
+
+.plant .box-border {
+  width: 68px;
+  height: 15px;
+  background-color: #f8cb3c;
+  margin-top: 20px;
+}
+
+.plant .box {
+  width: 68px;
+  height: 50px;
+  background-color: #f0a01e;
+  clip-path: polygon(5px 0, 63px 0, 53px 100%, 15px 100%);
+}
+
+/* Right rack => music box */
+.music-box {
+  position: relative;
+  width: 90px;
+  height: 110px;
+  background-color: #203536;
+  margin-right: 10px;
+}
+
+.music-box .circle {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: #192f2b;
+  box-shadow: 0 0 0 2px #fff, 0 0 0 12px #56a7a3, 0 0 0 15px #fff;
+  margin: 55px auto 0;
+}
+
+.music-box::after,
+.music-box::before,
+.music-box .circle::after,
+.music-box .circle::before {
+  position: absolute;
+  content: "";
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #4e9ca5;
+}
+
+.music-box::after,
+.music-box::before {
+  bottom: 10px;
+}
+
+.music-box .circle::after,
+.music-box .circle::before {
+  top: 30px;
+}
+
+.music-box::after,
+.music-box .circle::after {
+  left: 15px;
+}
+
+.music-box::before,
+.music-box .circle::before {
+  right: 15px;
 }

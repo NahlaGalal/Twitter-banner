@@ -195,7 +195,7 @@
   height: 100px;
   background: #fff;
   left: 900px;
-  top: 40px;
+  top: 20px;
   border-radius: 5px;
 }
 
@@ -369,10 +369,9 @@
 .on-table {
   display: flex;
   margin: 130px auto 0;
-  width: 1050px;
+  width: 1070px;
   align-items: flex-end;
-  border-bottom: 1px solid red;
-  padding-left: 20px;
+  padding-left: 10px;
 }
 
 /* On table => mobile */
@@ -546,4 +545,81 @@
   height: 70px;
   background-color: #4f9b9d;
   clip-path: polygon(5px 0, 63px 0, 53px 100%, 15px 100%);
+}
+
+/* On table => lamp */
+.on-table-lamp {
+  position: relative;
+}
+
+.on-table-lamp .top {
+  position: absolute;
+  transform: rotate(-130deg);
+  top: -45px;
+  left: -40px;
+  z-index: 2;
+}
+
+.on-table-lamp .body {
+  width: 68px;
+  height: 50px;
+  margin: 0 10px;
+  background-color: #fff;
+  clip-path: polygon(5px 0, 63px 0, 53px 100%, 15px 100%);
+}
+
+.on-table-lamp .head {
+  position: relative;
+  width: 88px;
+  height: 15px;
+  background-color: #fff;
+}
+
+.on-table-lamp .head::after {
+  position: absolute;
+  content: "";
+  width: 20px;
+  height: 10px;
+  border-radius: 20px 20px 0 0;
+  background-color: #faee0f;
+  left: 50%;
+  transform: translateX(-50%);
+  top: -10px;
+}
+
+.on-table-lamp .hand {
+  position: relative;
+  width: 20px;
+  height: 180px;
+  background-color: #fff;
+  margin-left: 50px;
+}
+
+.on-table-lamp .hand::after {
+  position: absolute;
+  content: "";
+  width: 90px;
+  height: 90px;
+  border-right: 25px solid #fff;
+  border-radius: 50%;
+  left: -90px;
+  top: -37px;
+  transform: rotate(-42deg);
+}
+
+.on-table-lamp .desk {
+  position: relative;
+  width: 100px;
+  height: 10px;
+  background-color: #fff;
+}
+
+.on-table-lamp .desk::before {
+  position: absolute;
+  content: "";
+  width: 17px;
+  height: 7px;
+  background-color: #e54e18;
+  top: -7px;
+  left: 20px;
 }
